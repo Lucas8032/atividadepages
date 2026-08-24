@@ -1,250 +1,50 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yago Silva Bonfim</title>
-
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>YAGO SILVA BONFIM | Cobranças e Informações Cadastrais</title>
 <style>
-body {
-    margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #f4f6f9;
-    color: #333;
-}
-
-header {
-    background: linear-gradient(135deg, #0a2a4f, #154a8a);
-    padding: 25px 40px;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 26px;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
-nav a {
-    color: #fff;
-    margin-left: 25px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.hero {
-    padding: 100px 20px;
-    text-align: center;
-    background: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40') center/cover no-repeat;
-    color: #fff;
-}
-
-.hero h2 {
-    font-size: 40px;
-    font-weight: 700;
-    text-shadow: 0 3px 8px rgba(0,0,0,0.4);
-}
-
-.hero p {
-    font-size: 20px;
-    margin-top: 15px;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
-}
-
-section {
-    max-width: 1100px;
-    margin: 60px auto;
-    padding: 40px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-}
-
-h2 {
-    color: #0a2a4f;
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    margin-top: 20px;
-}
-
-.card {
-    background: #f9fbfd;
-    padding: 25px;
-    border-radius: 12px;
-    border: 1px solid #e3e9f0;
-    transition: 0.2s;
-}
-
-.card:hover {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-    transform: translateY(-4px);
-}
-
-.card h3 {
-    color: #154a8a;
-}
-
-footer {
-    background: #0a2a4f;
-    padding: 25px;
-    color: #fff;
-    text-align: center;
-    margin-top: 60px;
-}
-
-footer a {
-    color: #79b8ff;
-    text-decoration: none;
-}
+:root{--p:#28536b;--p2:#34779a;--d:#102431;--t:#172534;--m:#657483;--l:#dde5eb;--s:#f3f7f9}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:var(--t);line-height:1.65}a{color:inherit}.container{width:min(1120px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--l);z-index:20}.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;color:var(--p);text-decoration:none}nav a{margin-left:15px;text-decoration:none;font-size:.88rem;font-weight:700;color:#536575}
+.hero{min-height:560px;display:flex;align-items:center;color:#fff;background:linear-gradient(90deg,rgba(16,36,49,.97),rgba(16,36,49,.74)),url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=82') center/cover}.hero h1{font-size:clamp(2.3rem,5vw,4.7rem);line-height:1.02;max-width:820px}.hero p{max-width:760px;color:#e5edf2}.tag{display:inline-block;border:1px solid #ffffff55;padding:7px 12px;border-radius:999px;font-size:.78rem;font-weight:900}
+.btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:800;margin:12px 8px 0 0}.btn1{background:#fff;color:var(--p)}.btn2{border:1px solid #ffffff66;color:#fff}
+section{padding:72px 0}.soft{background:var(--s)}.kicker{color:var(--p2);font-weight:900;text-transform:uppercase;font-size:.8rem;letter-spacing:.08em}h2{font-size:clamp(1.8rem,3vw,2.8rem);margin:6px 0 12px}.lead{color:var(--m);max-width:820px}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--l);margin-top:24px}th,td{padding:14px 16px;border-bottom:1px solid var(--l);text-align:left}th{width:31%;background:#fafbfc}
+.gallery{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;margin-top:28px}figure,.card{background:#fff;border:1px solid var(--l);border-radius:16px;overflow:hidden;box-shadow:0 8px 24px #0000000d}.big img{width:100%;height:420px;object-fit:cover}.side{display:grid;gap:18px}.small img{width:100%;height:196px;object-fit:cover}figcaption{padding:10px 14px;color:var(--m);font-size:.9rem}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.body{padding:20px}.body p{color:var(--m)}.checks{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.check{border:1px solid var(--l);border-radius:14px;padding:17px;background:#fff}.check strong{display:block;color:var(--p)}
+.form{max-width:760px;margin:auto;background:#fff;border:1px solid var(--l);border-radius:16px;padding:24px}.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{font-weight:800;font-size:.82rem}input,textarea{width:100%;padding:13px;border:1px solid var(--l);border-radius:10px;margin:6px 0 14px}textarea{min-height:120px}.meta{max-width:760px;margin:20px auto 0;text-align:center;color:var(--m);line-height:1.85}
+footer{background:var(--d);color:#e8eef2;padding:38px 0}footer a{color:#fff;text-decoration:none}.foot{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:24px}
+@media(max-width:900px){nav{display:none}.gallery,.grid3,.checks,.foot{grid-template-columns:1fr}}@media(max-width:650px){.row{grid-template-columns:1fr}}
 </style>
-</head>
+</head><body>
+<header><div class="container nav"><a class="brand" href="#inicio">YAGO SILVA BONFIM</a><nav><a href="#empresa">Empresa</a><a href="#servicos">Serviços</a><a href="#operacao">Operação comercial</a><a href="#conteudo">Conteúdo</a><a href="#contato">Contato</a><a href="politica-de-privacidade.html">Privacidade</a><a href="#termos">Termos</a></nav></div></header>
+<main>
+<section class="hero" id="inicio"><div class="container"><span class="tag">EMPRESA IDENTIFICADA • CNPJ ATIVO</span><h1>Cobranças e informações cadastrais</h1><p><strong>YAGO SILVA BONFIM</strong>, CNPJ <strong>50.325.909/0001-98</strong>, com cadastro em São Paulo/SP. A atividade principal registrada é <strong>Atividades de cobranças e informações cadastrais</strong>.</p><a class="btn btn1" href="#servicos">Conhecer os serviços</a><a class="btn btn2" href="#contato">Entrar em contato</a></div></section>
 
-<body>
+<section id="empresa"><div class="container"><span class="kicker">Quem somos</span><h2>Identificação da empresa</h2><p class="lead">Dados empresariais apresentados de forma clara para identificar a empresa responsável por este site e pelas atividades divulgadas.</p>
+<table>
+<tr><th>Nome empresarial</th><td>50.325.909 YAGO SILVA BONFIM</td></tr>
+<tr><th>Nome divulgado em base empresarial</th><td>Não disponível</td></tr>
+<tr><th>CNPJ</th><td>50.325.909/0001-98</td></tr>
+<tr><th>Data de abertura</th><td>14/04/2023</td></tr>
+<tr><th>Atividade principal</th><td>82.91-1-00 — Atividades de cobranças e informações cadastrais</td></tr>
+<tr><th>Situação cadastral</th><td>Ativa</td></tr>
+<tr><th>Endereço</th><td>10A Travessa Ogata, 105, Térreo — Jardim Beatriz — São Paulo/SP — CEP 04835-400</td></tr>
+</table>
+<div class="gallery"><figure class="big"><img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=82" alt="Análise documental"><figcaption>Organização e análise de informações cadastrais</figcaption></figure><div class="side"><figure class="small"><img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=900&q=82" alt="Documentos"><figcaption>Conferência de documentos e registros</figcaption></figure><figure class="small"><img src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=900&q=82" alt="Apoio administrativo"><figcaption>Apoio administrativo e organização de dados</figcaption></figure></div></div>
+</div></section>
 
-<header>
+<section class="soft" id="servicos"><div class="container"><span class="kicker">O que fazemos</span><h2>Serviços relacionados à atividade cadastrada</h2><p class="lead">A atividade principal envolve cobranças e informações cadastrais, incluindo organização de registros e apoio em processos administrativos relacionados.</p>
+<div class="grid3"><article class="card"><div class="body"><h3>Informações cadastrais</h3><p>Organização e compilação de informações cadastrais para finalidades empresariais, conforme o escopo do atendimento.</p></div></article><article class="card"><div class="body"><h3>Apoio em cobranças</h3><p>Atividades administrativas relacionadas à cobrança de faturas e dívidas para clientes, conforme condições previamente definidas.</p></div></article><article class="card"><div class="body"><h3>Análise de registros</h3><p>Conferência e organização de registros e históricos utilizados em rotinas de análise cadastral.</p></div></article></div>
+</div></section>
 
-<h1>Yago Silva Bonfim</h1>
+<section id="operacao"><div class="container"><span class="kicker">Operações comerciais</span><h2>Como funciona a relação comercial</h2><p class="lead">A identidade da empresa e os canais de contato ficam disponíveis para que o cliente saiba quem oferece o atendimento e possa confirmar as condições aplicáveis antes da contratação.</p>
+<div class="checks"><div class="check"><strong>Empresa responsável</strong>50.325.909 YAGO SILVA BONFIM, CNPJ 50.325.909/0001-98.</div><div class="check"><strong>Atendimento</strong>Solicitações são recebidas pelos canais oficiais divulgados nesta página.</div><div class="check"><strong>Escopo</strong>O tipo de serviço, finalidade, documentos e requisitos devem ser definidos antes da contratação.</div><div class="check"><strong>Orçamento</strong>Valores, forma de pagamento, prazo e condições devem ser informados antes da confirmação.</div><div class="check"><strong>Terceiros</strong>Quando houver participação de outros prestadores, essa relação deve ser informada quando aplicável.</div><div class="check"><strong>Pós-atendimento</strong>Dúvidas e solicitações podem ser encaminhadas pelos canais oficiais da empresa.</div></div></div></section>
 
-<nav>
-<a href="index.html">Início</a>
-<a href="politica-de-privacidade.html">Política de Privacidade</a>
-</nav>
+<section class="soft" id="conteudo"><div class="container"><span class="kicker">Informação útil</span><h2>Conteúdos para orientar o atendimento</h2><div class="grid3"><article class="card"><div class="body"><h3>Documentação</h3><p>Informações completas e legíveis ajudam a tornar a análise cadastral e o atendimento mais eficientes.</p></div></article><article class="card"><div class="body"><h3>Escopo do atendimento</h3><p>Antes da contratação, é importante definir claramente a finalidade do serviço e quais informações serão necessárias.</p></div></article><article class="card"><div class="body"><h3>Confirmação das condições</h3><p>Prazos, valores, responsabilidades e forma de atendimento devem ser confirmados antes da contratação.</p></div></article></div></div></section>
 
-</header>
+<section class="soft" id="contato"><div class="container"><span class="kicker">Fale conosco</span><h2>Entre em contato</h2><p class="lead">Preencha o formulário ou utilize os dados cadastrais disponíveis abaixo.</p>
+<form class="form"><div class="row"><div><label>Nome</label><input placeholder="Seu nome"></div><div><label>Telefone</label><input placeholder="(00) 00000-0000"></div></div><label>E-mail</label><input type="email" placeholder="voce@email.com"><label>Mensagem</label><textarea placeholder="Como podemos ajudar?"></textarea><button class="btn btn1" type="button">Enviar mensagem</button></form>
+<div class="meta"><strong>Telefone:</strong> contato cadastrado disponível parcialmente ((11) 99929-****)<br><strong>E-mail:</strong> contato cadastrado disponível parcialmente (c***************@****.com)<br><strong>Endereço:</strong> 10A Travessa Ogata, 105, Térreo — Jardim Beatriz — São Paulo/SP — CEP 04835-400</div></div></section>
 
-<div class="hero">
-
-<h2>Cobranças e Informações Cadastrais</h2>
-
-<p>
-Serviços de apoio voltados a atividades de cobrança e informações cadastrais.
-</p>
-
-</div>
-
-<section>
-
-<h2>Quem Somos</h2>
-
-<p>
-A empresa <strong>50.325.909 Yago Silva Bonfim</strong>,
-inscrita no CNPJ <strong>50.325.909/0001-98</strong>,
-foi fundada em <strong>14/04/2023</strong>, na cidade de
-<strong>São Paulo – SP</strong>.
-</p>
-
-<p>
-Sua atividade principal, conforme a Receita Federal, é
-<strong>82.91-1-00 - Atividades de cobranças e informações cadastrais</strong>.
-Sua situação cadastral é <strong>Ativa</strong>.
-</p>
-
-<p>
-A empresa atua em atividades relacionadas a cobranças e informações
-cadastrais, oferecendo serviços de apoio voltados à organização,
-acompanhamento e atendimento de demandas relacionadas à sua área de atuação.
-</p>
-
-</section>
-
-<section>
-
-<h2>Nossos Serviços</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Atividades de Cobrança</h3>
-<p>
-Serviços relacionados ao acompanhamento e realização de atividades
-de cobrança conforme as necessidades de cada atendimento.
-</p>
-</div>
-
-<div class="card">
-<h3>Informações Cadastrais</h3>
-<p>
-Atividades relacionadas à organização e tratamento de informações
-cadastrais dentro do escopo dos serviços prestados.
-</p>
-</div>
-
-<div class="card">
-<h3>Apoio Administrativo</h3>
-<p>
-Suporte aos processos relacionados às atividades de cobrança
-e informações cadastrais.
-</p>
-</div>
-
-<div class="card">
-<h3>Atendimento</h3>
-<p>
-Atendimento direcionado às necessidades de cada demanda,
-com organização e responsabilidade.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Nossos Pilares</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Missão</h3>
-<p>
-Prestar serviços relacionados a cobranças e informações cadastrais
-com organização, responsabilidade e eficiência.
-</p>
-</div>
-
-<div class="card">
-<h3>Visão</h3>
-<p>
-Buscar reconhecimento pela confiabilidade, organização
-e qualidade dos serviços prestados.
-</p>
-</div>
-
-<div class="card">
-<h3>Valores</h3>
-<p>
-Responsabilidade, transparência, organização, respeito
-e compromisso com o atendimento.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-© 2026 Yago Silva Bonfim • CNPJ 50.325.909/0001-98
-
-<br><br>
-
-<a href="politica-de-privacidade.html">
-Política de Privacidade
-</a>
-
-</footer>
-
-</body>
-</html>
+<section id="termos"><div class="container"><span class="kicker">Condições</span><h2>Termos de Uso e Condições Comerciais</h2><p>Este site apresenta informações institucionais da empresa, suas atividades e canais de contato.</p><p>Escopo, documentos, valores, prazo, formas de pagamento e demais condições devem ser confirmados antes da contratação.</p><p>Alterações, cancelamentos e demais solicitações devem ser tratadas pelos canais oficiais e conforme a legislação aplicável.</p></div></section>
+</main>
+<footer><div class="container"><div class="foot"><div><h3>YAGO SILVA BONFIM</h3><p>CNPJ: 50.325.909/0001-98</p><p>10A Travessa Ogata, 105, Térreo — Jardim Beatriz — São Paulo/SP — CEP 04835-400</p></div><div><h4>Institucional</h4><p><a href="#empresa">Empresa</a><br><a href="#servicos">Serviços</a><br><a href="#operacao">Operação comercial</a><br><a href="#conteudo">Conteúdo</a><br><a href="#contato">Contato</a></p></div><div><h4>Políticas</h4><p><a href="politica-de-privacidade.html">Política de Privacidade</a><br><a href="#termos">Termos de Uso</a></p></div></div></div></footer>
+</body></html>
